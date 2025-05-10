@@ -1,0 +1,48 @@
+:root {
+  --bar-fill: #57e705;
+  --bar-top: #6aff03;
+  --pixel-size: 7;
+}
+
+body {
+  background: #de88ff;
+}
+
+.container {
+  width: calc(38px * var(--pixel-size));
+  margin: 4em auto;
+}
+
+.healthbar {
+  width: calc(38px * var(--pixel-size));
+  margin: 0 auto calc(2px * var(--pixel-size)) auto;
+  display: block;
+}
+
+.healthbar_fill {
+  fill: var(--bar-fill);
+  transition: width 0.1s ease-in, fill 0.2s linear;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.button {
+  padding: 0;
+  border: 1px solid rgba(0,0,0,0);
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:focus {
+  border: 1px solid white;
+}
+
+.button img {
+  width: calc(9px * var(--pixel-size));
+  image-rendering: pixelated;
+}
